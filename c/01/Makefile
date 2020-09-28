@@ -1,7 +1,7 @@
 TARGET = prog
 # LIBS = -lm
 CC = gcc
-CFLAGS = -g -Wall -pedantic -Werror
+CFLAGS = -g -Wall -Wextra -pedantic -Werror
 
 .PHONY: default all clean
 
