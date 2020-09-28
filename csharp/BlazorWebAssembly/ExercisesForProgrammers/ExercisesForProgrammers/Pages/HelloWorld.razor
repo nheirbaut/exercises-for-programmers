@@ -1,0 +1,13 @@
+@page "/helloworld"
+
+<p>
+    What is your name?  <input @bind="name" /><br/>
+    @Greeting
+</p>
+
+@code
+{
+    private string name = "World";
+
+    private string Greeting => $"Hello, {name}, nice to meet you!";
+}
