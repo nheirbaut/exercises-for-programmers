@@ -12,16 +12,13 @@
                 <span class="oi oi-home" aria-hidden="true"></span> Home
             </NavLink>
         </li>
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="helloworld">
-                01 - Hello World
-            </NavLink>
-        </li>
-        @foreach (var exercise in Exercises.Select((title, index) => $"{index + 1} - {title}"))
+        @foreach (var exerciseData in Exercises.Select((title, index) => new { Index = index, Title = title }))
         {
             <li class="nav-item px-3">
-                <NavLink class="nav-link" href="helloworld">
-                    @exercise
+                <NavLink
+                    class="nav-link"
+                    href="@((new string(exerciseData.Title.Where(c => !char.IsWhiteSpace(c)).ToArray())).ToLower())">
+                    @($"{exerciseData.Index + 1:00} - {exerciseData.Title}")
                 </NavLink>
             </li>
         }
