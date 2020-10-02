@@ -1,0 +1,22 @@
+﻿@page "/countingthenumberofcharacters"
+
+<div class="container">
+    <div class="row pt-4">
+        <div class="col-sm-auto">What is the input string? </div>
+        <div class="col-sm-auto"><input @bind="inputString" @bind:event="oninput" /></div>
+    </div>
+
+    @if (!string.IsNullOrEmpty(inputString))
+    {
+        <div class="row pt-4">
+            <div class="col-sm-auto">@InputStringAnalysis</div>
+        </div>
+    }
+</div>
+
+@code
+{
+    private string inputString = string.Empty;
+
+    private string InputStringAnalysis => $"{inputString} has {inputString.Length} characters.";
+}
