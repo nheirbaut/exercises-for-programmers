@@ -1,9 +1,14 @@
 @page "/helloworld"
 
-<p>
-    What is your name?  <input @bind="name" /><br/>
-    @Greeting
-</p>
+<div class="container">
+    <div class="row pt-4">
+        <div class="col-sm-auto">What is your name? </div>
+        <div class="col-sm-auto"><input @bind="name"/></div>
+    </div>
+    <div class="row pt-4">
+        <div class="col-sm-auto">@Greeting</div>
+    </div>
+</div>
 
 @code
 {
