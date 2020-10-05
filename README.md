@@ -1,4 +1,4 @@
-# exercises-for-programmers
+# Exercises for Programmers
 Results of the exercises  from the book '[Exercises for Programmers](https://pragprog.com/book/bhwb/exercises-for-programmers)' in multiple programming languages. They help me to learn new programming languages, frameworks and methodologies and stay current with the ones I already used in the past.
 
 *Beware:* These might not necessarily be the best or most proper solutions. They just adhere to the requirements for the task. But if you see any gross mistakes or have some great improvement remarks, then please feel free to contact me. It is after all a learning experience.
