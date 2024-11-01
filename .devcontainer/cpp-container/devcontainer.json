@@ -1,0 +1,5 @@
+{
+	"name": "C++",
+	"image": "mcr.microsoft.com/devcontainers/cpp:1-debian-12",
+	"workspaceFolder": "/workspaces/exercises-for-programmers/cpp"
+}

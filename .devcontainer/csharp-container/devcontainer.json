@@ -1,0 +1,13 @@
+{
+	"name": "C# (.NET)",
+	"image": "mcr.microsoft.com/devcontainers/dotnet:1-9.0-bookworm",
+	"workspaceFolder": "/workspaces/exercises-for-programmers/csharp",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-dotnettools.csharp",
+				"eamodio.gitlens"
+			]
+		}
+	}
+}
